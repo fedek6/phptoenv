@@ -1,8 +1,14 @@
 {
   "name": "@fedek6/phptoenv",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Convert PHP config file (with constants) to .env file",
   "main": "bin/index.js",
+  "keywords": [
+    "php",
+    "conversion",
+    "env",
+    "config"
+  ],
   "bin": {
     "phptoenv": "./bin/index.js"
   },
