@@ -1,0 +1,28 @@
+{
+  "name": "@fedek6/phptoenv",
+  "version": "0.0.1",
+  "description": "Convert PHP config file (with constants) to .env file",
+  "main": "bin/index.js",
+  "bin": {
+    "phptoenv": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedek6/phptoenv.git"
+  },
+  "author": "Konrad Fedorczyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fedek6/phptoenv/issues"
+  },
+  "homepage": "https://github.com/fedek6/phptoenv#readme",
+  "dependencies": {
+    "commander": "^8.3.0"
+  },
+  "devDependencies": {
+    "jest": "^27.4.5"
+  }
+}
