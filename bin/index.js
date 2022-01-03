@@ -22,7 +22,7 @@ program
       parseFile(
         filePath,
         (v) => {
-          const { value, full_value: fullValue, name } = v.groups;
+          const { value, fullValue, name } = v;
 
           ws.write(`${name}="${value ?? fullValue}"\n`);
         },

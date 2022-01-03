@@ -5,7 +5,17 @@ const defineRegex =
   /define\( ?['"](?<name>\w+)['"], +(?<full_value>false|true|['"](?<value>.*)['"]) ?\);/mu;
 
 module.exports.parseLine = (line) => {
-  return line.match(defineRegex);
+  const matched = line.match(defineRegex);
+
+  if (matched) {
+    return {
+      name: matched.groups.name,
+      value: matched.groups.value,
+      fullValue: matched.groups.full_value
+    }
+  } else {
+    return false;
+  }
 };
 
 module.exports.parseFile = (path, onParse, onClose) => {
